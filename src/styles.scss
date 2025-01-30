@@ -1,4 +1,5 @@
-body { margin: 0; font-family: "Poppins", serif !important;}
+body { margin: 0; font-family: "Poppins", serif !important;
+  background-color: #f8f8f8 !important;}
 .poppins-light {
   font-family: "Poppins", serif;
   font-weight: 300;
@@ -26,7 +27,22 @@ body { margin: 0; font-family: "Poppins", serif !important;}
     font-family: 'poppins';
     font-weight: 400 !important;
 }
-.mat-mdc-tab.mdc-tab--active .mdc-tab__text-label, .mat-mdc-tab .mdc-tab-indicator__content--underline {
-color: #F8CC00 !important;
-border-color: #F8CC00 !important;
+.mat-mdc-tab{
+  .mdc-tab__text-label{
+    padding: 10px 0!important;
+    border-bottom: 3px solid transparent;
+  }
+  .mdc-tab-indicator__content--underline {
+    display: none;
+  }
+}
+.mat-mdc-tab.mdc-tab--active {
+  .mdc-tab__text-label{
+    color: #F8CC00 !important;
+    border-bottom: 3px solid #F8CC00;
+    padding: 10px 0!important;
+  }
+}
+.btn-primary:focus{
+  box-shadow: none !important;
 }
